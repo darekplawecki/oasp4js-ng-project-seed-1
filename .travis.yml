@@ -1,10 +1,6 @@
 language: node_js
 node_js:
   - "6"
-addons:
-  code_climate:
-    repo_token:
-      secure: FGz2pZFWONANh8N4vLjXLqR701eCgQu72+yLSZUhjSmhk5SP3NQcHVevw/KFlU/2iP24ZQnSpvK/uY6DqZBG8nTA3FUE9nNPD/QEUBNRpQcokkn+t4wNNs5EQo0lOZ8NXpZnegmOUf1t++0HSs0PW8VxreAMlanBG2aOLruM4e7QfbgHsscwIDgoP1L4Vhsx1e7BaFq/RJsqJUFS0zCmGcWFd43fkUWPqtVIvWz9lYeLgoULJt+8amuOZi2kqEhN7YRP67T2w+KiZWGRUXhy+sX3QksFHdZDjhKqPe2nqh+FGVCMJmprbVEpu/fFcoit+U3hfNcqOxKZpKx0PxJOFg+VMnsF5kLylOtXNa9vkZUct3cek9T1OB8E6ORZ2QA1Px73oGc5C+kYzoZzLsqMCA9RbmAgbWgKdqW6fBdakdXGXAaF5d2baweCdaKlUg8lT34G2fDa/xpfbi1O3q4eShwERpUGfEDpZLqBX7+qYnon/+VJoG5g9v7svh6UHpRXPe0Y949R6BiyUBcsKiMbuFtIVN4/gRQXhhDd/JhP0YOtop6xLz3FGMVadt5irRETSNu1dXq1CFViu/meJ/c9zVXQEZ7mDD8/11G4kNRBRjRsLX4dfM6MlvqQvPGDJ/101sgUI/Zyl7aGOVhyiBH7bul9mB3+TlRE7Q3tSV2sJjY=
 before_install:
   # setting the path for phantom.js 2.0.0
   - export PATH=/usr/local/phantomjs-2.0.0/bin:$PATH
@@ -14,5 +10,4 @@ script:
   - npm run-script build:dist
   - npm run-script test:coverage
 after_success:
-  - npm install -g codeclimate-test-reporter
-  - codeclimate-test-reporter < coverage/lcov.info
+  - bash <(curl -s https://codecov.io/bash)
