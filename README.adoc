@@ -5,6 +5,7 @@ the https://github.com/angular/angular-cli[Angular CLI].
 
 image:https://img.shields.io/travis/darekplawecki/oasp4js-ng-project-seed-1/develop-ng4.svg[Build Status (Travis CI), link=https://travis-ci.org/darekplawecki/oasp4js-ng-project-seed-1]
 image:https://img.shields.io/codecov/c/github/darekplawecki/oasp4js-ng-project-seed-1/develop-ng4.svg[Code Coverage, link=https://codecov.io/gh/darekplawecki/oasp4js-ng-project-seed-1]
+image:https://www.versioneye.com/user/projects/58de7468d6c98d0043fec751/badge.svg[Dependency Status, link=https://www.versioneye.com/user/projects/58de7468d6c98d0043fec751]
 
 == Getting started
 
