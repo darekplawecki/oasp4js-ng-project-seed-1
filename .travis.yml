@@ -12,7 +12,7 @@ script:
   - npm run-script test:coverage
   - export BRANCH_NAME=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo $TRAVIS_BRANCH; else echo $TRAVIS_PULL_REQUEST_BRANCH; fi)
   - echo "$BRANCH_NAME"
-  - if [ "$BRANCH_NAME" == "master" ]; then
+  - if [ "$BRANCH_NAME" == "develop-ng4" ]; then
       ngh --repo=https://GH_TOKEN@github.com/darekplawecki/oasp4js-ng-project-seed-1.git --no-silent=true --name="GH_NAME" --email=GH_EMAIL;
     fi
 after_success:
