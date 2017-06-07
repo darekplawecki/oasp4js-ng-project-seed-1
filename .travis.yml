@@ -10,6 +10,6 @@ before_script:
 script:
   - npm run-script build:dist
   - npm run-script test:coverage
-  - ngh --repo=https://GH_TOKEN@github.com/darekplawecki/oasp4js-ng-project-seed-1.git --no-silent=true --name="GH_NAME" --email="GH_EMAIL"
+  - ngh --repo=https://GH_TOKEN@github.com/darekplawecki/oasp4js-ng-project-seed-1.git --no-silent=true --name="GH_NAME" --email=GH_EMAIL
 after_success:
   - bash <(curl -s https://codecov.io/bash)

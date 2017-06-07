@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:dist": "ng build --prod --base-href \"https://oasp.github.io/oasp4js-ng-project-seed/\"",
+    "build:dist": "ng build --prod --base-href \"https://darekplawecki.github.io/oasp4js-ng-project-seed-1/\"",
     "test:coverage": "ng test --single-run --code-coverage --browsers=PhantomJS"
   },
   "private": true,
