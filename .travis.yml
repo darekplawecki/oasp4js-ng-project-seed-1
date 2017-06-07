@@ -6,8 +6,10 @@ before_install:
   - export PATH=/usr/local/phantomjs-2.0.0/bin:$PATH
 before_script:
   - npm install -g @angular/cli
+  - npm install -g angular-cli-ghpages
 script:
   - npm run-script build:dist
   - npm run-script test:coverage
+  - ngh
 after_success:
   - bash <(curl -s https://codecov.io/bash)
